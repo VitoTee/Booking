@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "searchBoxComponent" : "../components/searchBox/searchBox",
+    "footerComponent" : "../components/footer/footer"
+  }
+}

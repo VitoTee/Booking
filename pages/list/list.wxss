@@ -1,0 +1,126 @@
+/* pages/list/list.wxss */
+.list_intro > view:first-child{
+  position:relative;
+  border-bottom:1px solid #F2F4F6;
+  color:#ED6D15;
+  padding:20rpx 20rpx 20rpx 150rpx;
+  font-size:15px;
+  z-index:2;
+}
+.list_intro > view:first-child > image:first-child{
+  position:absolute;
+  top:0;
+  left:5%;
+  width:66rpx;
+  height:100rpx;
+}
+.list_intro > view:first-child > text:last-child{
+  float:right;
+}
+.hotel_list{
+  background-color:#F2F4F6;
+}
+.hotel_list > .hotel_item{
+  padding-right:20rpx;
+  font-size:20px;
+  color:#404752;
+  position:relative;
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  flex-direction: row;
+  margin-bottom:20rpx;
+  background-color:#fff;
+}
+.hotel_list > .hotel_item:first-child{
+  padding-top:20rpx;
+}
+.hotel_list > .hotel_item:first-child .hotel_item_off{
+  display: none;
+}
+.hotel_list > .hotel_item > image{
+  width:220rpx;
+  height:240rpx;
+  margin-right:20rpx;
+}
+.hotel_list > .hotel_item > view:nth-child(2){
+  color:#404752;
+  font-size:15px;
+  position:relative;
+}
+.hotel_list > .hotel_item > view:nth-child(2) > view:first-child{
+  margin-top:20rpx;
+  width:75%;
+}
+.hotel_list > .hotel_item > view:nth-child(2) > view:nth-child(2){
+  color:#F6CF5B;
+}
+.hotel_list > .hotel_item > view:nth-child(2) > view:nth-child(3){
+  color:#2C5CA5;
+  font-size:13px;
+  position:absolute;
+  bottom:20rpx;
+}
+.hotel_list > .hotel_item > view:nth-child(2) > view:nth-child(3) > text:first-child{
+  color:#fff;
+  background-color:#2C5CA5;
+  width:50rpx;
+  height:50rpx;
+  line-height:50rpx;
+  border-radius:10rpx;
+  border-bottom-left-radius:0;
+  text-align:center;
+  display:inline-block;
+  margin-right:10rpx;
+  align-self: bottom;
+}
+.hotel_list > .hotel_item > view:last-child{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width:300rpx;
+  position:absolute;
+  right:20rpx;
+  bottom:20rpx;
+  font-size:16px;
+  
+}
+.hotel_list > .hotel_item:first-child > view:last-child > text:first-child{
+  display: none;
+}
+.hotel_list > .hotel_item > view:last-child > text:first-child{
+  color:#ccc;
+  text-decoration:line-through;
+  font-size:13px;
+}
+.hotel_list > .hotel_item > view:last-child > text:last-child{
+  color:#ED6D15;
+  text-align:right;
+}
+.hotel_list > .hotel_item > view > .hotel_item_off{
+  position:absolute;
+  width:88rpx; height:70rpx;
+  margin-bottom:10rpx;
+  color:#ED6D15;
+  font-size:14px;
+  padding:10rpx 10rpx 0 0;
+  text-align:right;
+  top:0; right:20rpx;
+
+}
+.hotel_list > .hotel_item > view > .hotel_item_off > image{
+  position:absolute;
+  top:0;
+  left:0;
+  width:88rpx;
+  height:70rpx;
+}
+.hotel_list > .hotel_item > view > .hotel_item_off > .off{
+  position: absolute;
+  left:15rpx;
+  top:10rpx;
+  color:#fff;
+  font-size:13px;
+}

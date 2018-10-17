@@ -1,0 +1,169 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+  <!-- swiper -->
+  <swiper autoplay='1000' indicator-dots="true" indicator-active-color='#ccc'>
+    <swiper-item wx:for="{{detail_info.picList}}" wx:key="id">
+      <image mode="aspectFill" src="{{item.pic}}"></image>
+    </swiper-item>
+</swiper>
+  <!-- hotel name -->
+  <view class="detail_boxs">
+    <view class='clearfix'>
+      <image src="/assets/images/icons/icon1.png"></image>
+      <text>今日特惠</text>
+      <text>{{countTime}}</text>
+    </view>
+    <view>
+      <view>{{detail_info.name}}</view>
+      <view>★★★★★</view>
+      <view>
+        <text>{{detail_info.score}}</text>
+        <text>{{detail_info.score >= 7 ? '非常好' : '良好'}}</text>
+      </view>
+    </view>
+    <view class="separation"></view>
+    <view>
+      <view>
+        <text>住宿介绍</text>
+        <navigator hover-class='none' url='../facilitfy/facilitfy'>查看设施列表</navigator>
+      </view>
+      <view>
+        {{ detail_info.hotel_intro }}
+      </view>
+    </view>
+    <view class="separation"></view>
+    <view>
+      <text>位置</text>
+      <view>
+        <i class="iconfont icon-location"></i>
+        <view>
+          <view>{{ detail_info.address_en }}</view>
+          <text>{{ detail_info.address_cn }}</text>
+        </view>
+        <text bindtap="toMap" data-latitude="{{ detail_info.latitude }}" data-longitude="{{ detail_info.longitude }}">查看地图</text>
+      </view>
+    </view>
+    <view class="separation"></view>
+    <view>
+      <view>
+        <text>{{ detail_info.score }}</text>
+        <text>非常好</text>
+      </view>
+      <text>共{{ detail_info.comment }}条点评</text>
+    </view>
+    <view class="separation"></view>
+    <view>
+      <view>
+        <view style="border-right:1rpx solid #ccc">
+            <text>入住日期</text>
+            <picker mode="date" value="{{ checkInValue }}" bindchange="checkInChange">
+              <view class="picker">
+                {{ checkInDate }}
+              </view>
+            </picker>
+        </view>
+        <view>
+            <text>退房日期</text>
+            <picker mode="date" value="{{ checkOutValue }}" bindchange="checkOutChange">
+              <view class="picker">
+                {{ checkOutDate }}
+              </view>
+            </picker>
+        </view>
+      </view>
+      <view>
+        <view>
+          <image src="/assets/images/details/detail_4.jpg" mode='aspectFill'></image>
+          <view>
+            <view>高级大床及双床间</view>
+            <view>
+              <icon type="success" size="10"></icon>
+              <text>免费WiFi</text>
+            </view> 
+            <view>
+              <icon type="success" size="10"></icon>
+              <text>指定日期前可免费取消</text>
+            </view> 
+            <view>
+              <view>最多可住2人</view>
+              <view>2张单人床</view>
+              <view><navigator hover-class='none'>更多</navigator></view>
+            </view>
+          </view>
+          <view class="off">
+            <image src="/assets/images/icons/icon3.png"></image>
+            <text>-48%</text> 
+          </view>
+        </view>
+        <view>
+          <view>780<text>元</text></view>
+          <view>1520元</view>
+          <button>点击预订</button>
+        </view>
+        <view class="separation"></view>
+      </view>
+      <view>
+        <view>
+          <image src="/assets/images/details/detail_4.jpg" mode='aspectFill'></image>
+          <view>
+            <view>高级大床及双床间</view>
+            <view>
+              <icon type="success" size="10"></icon>
+              <text>免费WiFi</text>
+            </view> 
+            <view>
+              <icon type="success" size="10"></icon>
+              <text>指定日期前可免费取消</text>
+            </view> 
+            <view>
+              <view>最多可住2人</view>
+              <view>2张单人床</view>
+              <view><navigator hover-class='none'>更多</navigator></view>
+            </view>
+          </view>
+          <view class="off">
+            <image src="/assets/images/icons/icon3.png"></image>
+            <text>-48%</text> 
+          </view>
+        </view>
+        <view>
+          <view>780<text>元</text></view>
+          <view>1520元</view>
+          <button>点击预订</button>
+        </view>
+        <view class="separation"></view>
+      </view>
+      <view>
+        <view>
+          <image src="/assets/images/details/detail_4.jpg" mode='aspectFill'></image>
+          <view>
+            <view>高级大床及双床间</view>
+            <view>
+              <icon type="success" size="10"></icon>
+              <text>免费WiFi</text>
+            </view> 
+            <view>
+              <icon type="success" size="10"></icon>
+              <text>指定日期前可免费取消</text>
+            </view> 
+            <view>
+              <view>最多可住2人</view>
+              <view>2张单人床</view>
+              <view><navigator hover-class='none'>更多</navigator></view>
+            </view>
+          </view>
+          <view class="off">
+            <image src="/assets/images/icons/icon3.png"></image>
+            <text>-48%</text> 
+          </view>
+        </view>
+        <view>
+          <view>780<text>元</text></view>
+          <view>1520元</view>
+          <button>点击预订</button>
+        </view>
+        <view class="separation"></view>
+      </view>
+    </view>
+  </view>
+</view>

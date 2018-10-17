@@ -1,0 +1,36 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <searchBoxComponent id="searchBoxComponent" style="margin-top:-170rpx"></searchBoxComponent>
+  <view class="list_intro">
+    <view class='clearfix'>
+      <image src="/assets/images/icons/icon1.png"></image>
+      <text>今日特惠</text>
+      <text>{{countTime}}</text>
+    </view>
+  </view>
+  <view class="hotel_list">
+    <view class="hotel_item" wx:for="{{ hotelList }}" wx:key="id">
+      <image src="{{ item.pic }}" mode="scaleToFill"></image>
+      <view>
+        <view>{{ item.name }}</view>
+        <view>★★★★★</view>
+        <view>
+          <text>{{ item.score }}</text>
+          <text>{{item.score >= 7 ? '非常好' : '良好'}}</text>
+        </view>
+        <view class="hotel_item_off">
+          <image src="/assets/images/icons/icon3.png"></image>
+          <text class="off">{{ item.off }}</text>
+        </view>
+      </view>
+      <view>
+        <text>{{ item.oldPrice }}元</text>
+        <text>约 {{ item.price }}元</text>
+      </view>
+    </view>
+  </view>
+  <footerComponent id="footerComponent">
+    <!-- <view slot="before"></view>
+    <view slot="after"></view> -->
+  </footerComponent>
+</view>

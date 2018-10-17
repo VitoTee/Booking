@@ -1,0 +1,43 @@
+/* pages/components/footer/footer.wxss */
+footerComponent{
+  width:100%;
+}
+/* 底部about */
+.about{
+  text-align: center;
+  padding:40rpx 30rpx;
+  background-color:#F2F4F6;
+}
+.about > image{
+  width:45%;
+  height:40rpx;
+}
+.about > .about_item{
+  display: flex;
+  flex-flow:row nowrap;
+  text-align:left;
+  font-size:13px;
+  color:#434953;
+  justify-content: space-around;
+  align-items:center;
+  padding:20rpx 0;
+}
+.about > .about_item > image{
+  width:80rpx;
+  height:80rpx;
+}
+.about > .about_item > view{
+  width:82%;
+}
+
+/* 底部copyright */
+.footer{
+  background-color:#E6E9ED;
+  font-size:13px;
+  color:#59606A;
+  text-align:center;
+  padding:30rpx 0;
+}
+.footer > view:last-child{
+  margin-top:20rpx;
+}

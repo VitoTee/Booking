@@ -1,0 +1,107 @@
+<!--pages/components/searchBox/searchBox.wxml-->
+<!-- <view class="wrapper">
+  <slot name="before"></slot>
+  <slot name="after"></slot>  
+</view> -->
+
+<view class="banner">
+  <!-- logo -->
+  <view class="banner_title">
+    <text>Booking</text>
+    <text>.com</text>
+    <text>缤客</text>
+  </view>
+  <!-- slogan -->
+  <view class="banner_slogan">旅行无止境，优惠无穷尽</view>
+  <!-- search area -->
+  <view class="search_box {{ search_box ? 'active' : '' }}" catchtap="showSearchBox">
+    <i class="iconfont icon-search"></i>
+    <input 
+      disabled 
+      catchtap="showCitySearchBox" 
+      data-cantap="{{ inputCanTap }}"
+      value="{{ destination }}"
+    ></input>
+    <text>{{ checkInMonthDate }} - {{ checkOutMonthDate }} ({{ stayNights }}晚)</text>
+  </view>
+  <!-- hidden box -->
+  <view class="hidden_box" animation="{{ animationSearchBox }}">
+    <view class="input_box">
+      <view>
+        <view class="search_box">
+          <text>入住日期</text>
+          <picker mode="date" value="{{ checkInValue }}" bindchange="checkInChange">
+            <view class="picker">
+              {{ checkInDate }}
+            </view>
+          </picker>
+        </view>
+        <view class="search_box">
+          <text>退房日期</text>
+          <picker mode="date" value="{{ checkOutValue }}" bindchange="checkOutChange">
+            <view class="picker">
+              {{ checkOutDate }}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <view>
+        <view class="search_box">
+          <text>客房</text>
+          <picker range="{{ roomNumArr }}" value="{{ roomNumIndex }}" bindchange="roomNumChange">
+            <view class="picker">
+              {{ roomNumArr[roomNumIndex] }}
+            </view>
+          </picker>
+        </view>
+        <view class="search_box">
+          <text>成人</text>
+          <picker range="{{ adultNumArr }}" value="{{ adultNumIndex }}" bindchange="adultNumChange">
+            <view class="picker">
+              {{ adultNumArr[adultNumIndex] }}
+            </view>
+          </picker>
+        </view>
+        <view class="search_box">
+          <text>儿童</text>
+          <picker range="{{ childNumArr }}" value="{{ childNumIndex }}" bindchange="childNumChange">
+            <view class="picker">
+              {{ childNumArr[childNumIndex] }}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <button bindtap="toSearch">搜特惠</button>
+    </view>
+  </view>
+  <!-- close icon -->
+  <i class="close_search iconfont icon-close" bindtap="hideSearchBox" animation="{{ animationCloseBtn }}"></i>
+</view>
+<!-- mask -->
+<view class="mask" bindtap="hideSearchBox" animation="{{ animationMask }}"></view>
+<!-- search input box and city list -->
+<view class="search_msg_box" animation="{{ animationCitySearchBox }}">
+  <view>
+    <!-- search area -->
+    <view class="search_box {{ search_box ? 'active' : '' }}">
+    <i class="iconfont icon-search"></i>
+      <input 
+        placeholder="输入目的地开始搜索" 
+        bindconfirm="inputConfirm" 
+        bindinput="inputConfirm" 
+      ></input>
+    </view>
+    <text bindtap="hideAll">取消</text>
+  </view>
+  <view class="box_title" wx:if="{{!isSearching}}">热门目的地</view>
+  <view class="box_loading" wx:if="{{isLoading}}"><i class="iconfont icon-location"></i></view>
+  <view class="city_list">
+    <view class="city_item" wx:for="{{ city_data }}" wx:key="id" data-id="{{ item.id }}" catchtap="destinationChange" data-city="{{ item.city }}">
+      <text class="city">{{ item.city }}</text>
+      <text class="country">{{ item.country }}</text>
+    </view>
+  </view>
+  <view class="notice_box">
+    若找不到想要的搜索的目的地，不妨尝试输入国家或地区名称进行搜索，或用英文搜索试试
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/components/footer/footer.wxml-->
+<!-- <view class="wrapper">
+  <slot name="before"></slot>
+  <slot name="after"></slot>  
+</view> -->
+
+<view>
+  <view class="about">
+    <image src="/assets/images/logo.png"></image>
+    <view class="about_item" wx:for="{{about_data}}" wx:key="id">
+      <image src="{{item.icon}}"></image>
+      <view>
+        <view>{{item.desc[0]}}</view>
+        <view>{{item.desc[1]}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="footer">
+  <view>私隐和Cookies</view>
+  <view>相关条款</view>
+  <view>版权 © 1996-2017 Booking.com™. 版权所有.</view>
+</view>

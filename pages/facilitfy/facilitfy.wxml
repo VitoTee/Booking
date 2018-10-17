@@ -1,0 +1,149 @@
+<!--pages/facilitfy/facilitfy.wxml-->
+<view class="facBox">
+  <view class="title">泳池及康体设施</view>
+  <view class="contentBox">
+    <view>
+      <text>健身房</text>
+      <text>桑拿浴(额外付费)</text>
+      <text>室内游泳池(全年开放)(额外付费)</text>
+      <text>游泳池</text>
+      <text>Spa设施</text>
+      <text>公共浴池(额外付费)</text>
+    </view>
+    <view>
+      <text>温泉浴(额外付费)</text>
+      <text>热水浴池/按摩浴缸(额外收费)</text>
+      <text></text>
+      <text>私人教练</text>
+      <text>按摩(额外付费)</text>
+      <text>健身中心(额外付费)</text>
+      <text>瑜伽课程</text>
+    </view>
+  </view>
+</view>
+<view class="separation"></view>
+<view class="facBox">
+  <view class="title">餐饮服务</view>
+  <view class="contentBox">
+    <view>
+      <text>酒吧</text>
+      <text>红酒/香槟(额外付费)</text>
+      <text>内部咖啡店</text>
+    </view>
+    <view>
+      <text>在客房内享用早餐</text>
+      <text>客房服务</text>
+      <text>餐厅</text>
+    </view>
+  </view>
+</view>
+<view class="separation"></view>
+<view class="facBox">
+  <view class="title">其它</view>
+  <view class="contentBox">
+    <view>
+      <text>吸烟区</text>
+      <text>空调</text>
+      <text>无障碍设施</text>
+      <text>禁烟客房</text>
+    </view>
+    <view>
+      <text>家庭间</text>
+      <text>电梯</text>
+      <text>暖气</text>
+    </view>
+  </view>
+</view>
+<view class="separation"></view>
+<view class="facBox">
+  <view class="title">商店</view>
+  <view class="contentBox">
+    <view>
+      <text>商店(酒店内部)</text>
+      <text>理发/美容中心</text>
+    </view>
+    <view>
+      <text>礼品店</text>
+    </view>
+  </view>
+</view>
+<view class="separation"></view>
+<view class="facBox">
+  <view class="title">前台服务</view>
+  <view class="contentBox">
+    <view>
+      <text>礼宾服务</text>
+      <text>行李寄存</text>
+      <text>24小时前台</text>
+      <text>保险箱</text>
+    </view>
+    <view>
+      <text>报纸</text>
+      <text>外币兑换</text>
+      <text>自动提款机(酒店内部)</text>
+    </view>
+  </view>
+</view>
+<view class="separation"></view>
+<view class="facBox">
+  <view class="title">娱乐设施及家庭服务</view>
+  <view class="contentBox">
+    <view>
+      <text>卡拉OK(额外付费)</text>
+    </view>
+  </view>
+</view>
+<view class="separation"></view>
+<view class="facBox">
+  <view class="title">交通服务</view>
+  <view class="contentBox">
+    <view>
+      <text>机场班车(额外收费)</text>
+      <text>班车服务(免费)</text>
+    </view>
+    <view>
+      <text>停车库</text>
+    </view>
+  </view>
+</view>
+<view class="separation"></view>
+<view class="facBox">
+  <view class="title">商务设施</view>
+  <view class="contentBox">
+    <view>
+      <text>传真/复印(额外收费)</text>
+      <text>会议/宴会设施(额外收费)</text>
+    </view>
+    <view>
+      <text>商务中心(额外收费)</text>
+    </view>
+  </view>
+</view>
+<view class="separation"></view>
+<view class="facBox">
+  <view class="title">活动设施</view>
+  <view class="contentBox">
+    <view>
+      <text>保龄球(额外收费)</text>
+      <text>飞镖游戏(额外收费)</text>
+    </view>
+    <view>
+      <text>台球(额外收费)</text>
+    </view>
+    <view></view>
+  </view>
+</view>
+<view class="separation"></view>
+<view class="facBox">
+  <view class="title">清洁服务</view>
+  <view class="contentBox">
+    <view>
+      <text>干洗(额外收费)</text>
+      <text>每日清洁服务</text>
+    </view>
+    <view>
+      <text>洗衣(额外收费)</text>
+    </view>
+    <view></view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+/* pages/facilitfy/facilitfy.wxss */
+.facBox{
+  width:100%;
+  padding:20rpx;
+}
+.title{
+  font-size:18px;
+  margin-bottom:20rpx;
+}
+.contentBox{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contentBox > view{
+  width:50%;
+  font-size:14px;
+  display: flex;
+  flex-direction: column;
+}
+.contentBox > view > text{
+  min-height:40rpx;
+}

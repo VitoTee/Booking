@@ -1,0 +1,152 @@
+/**index.wxss**/
+.container{
+  position:relative;
+}
+.intro_title{
+  font-size:14px;
+  color:#8291a5;
+  position:relative;
+  padding:36rpx 0 50rpx 150rpx;
+  border-bottom:2rpx solid #F2F3F6; 
+}
+.intro_title > image{
+  position:absolute;
+  top:0;
+  left:40rpx;
+  width:88rpx;
+  height:144rpx;
+}
+.intro_title > view:nth-child(2){
+  color:#ED6D15;
+  font-size:16px;
+}
+.intro_list{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: space-between;
+  padding:20rpx;
+}
+.intro_item{
+  width:48%;
+  font-size:17px;
+  color:#414A54;
+  margin-bottom:40rpx;
+}
+.intro_item > navigator > image{
+  width:100%;
+  height:200rpx;
+  margin-top:10rpx;
+  vertical-align:bottom;
+}
+.intro_item > navigator > .intro_count{
+  position:relative;
+  height:60rpx;
+  background-color:#F2F3F6;
+  margin-bottom:10rpx;
+  color:#ED6D15;
+  font-size:14px;
+  padding:10rpx 10rpx 0 0;
+  text-align:right;
+}
+.intro_item > navigator > .intro_count > image{
+  position:absolute;
+  top:0;
+  left:0;
+  width:88rpx;
+  height:70rpx;
+}
+.intro_item > navigator > .intro_count > .off{
+  position: absolute;
+  left:15rpx;
+  top:10rpx;
+  color:#fff;
+  font-size:12px;
+}
+.intro_item > navigator > view:nth-child(4){
+  font-size:15px;
+  font-weight: bold;
+}
+.intro_item > navigator > view:nth-child(5){
+  color:#FEBA12;
+}
+.intro_item > navigator > view:last-child{
+  font-size:12px;
+}
+.intro_item > navigator > view:last-child > text{
+  color:#ED6D15;
+}
+.hot > view:first-child{
+  padding:20rpx;
+  font-size:15px;
+  font-weight:bold;
+  color:#434953;
+}
+.hot > .hot_banner{
+  position:relative;
+}
+.hot > .hot_banner > image{
+  width:100%;
+}
+.hot > .hot_banner > text{
+  position:absolute;
+  left:30rpx;
+  top:8%;
+  font-size:40px;
+  color:#fff;
+  font-weight: bold;
+}
+.hot > .hot_banner > .hot_banner_icon{
+  display: inline;
+}
+.hot > .hot_banner > .hot_banner_icon > image{
+  position:absolute;
+  top:0;
+  right:30rpx;
+  width:88rpx;
+  height:144rpx;
+}
+.hot > .hot_banner > .hot_banner_icon > view{
+  display: inline-block;
+  width:80rpx;
+  position:absolute;
+  top:8%;
+  right:35rpx;
+  font-size:12px;
+  color:#fff;
+  text-align:center;
+}
+.hot > .hot_list{
+  display:flex;
+  flex-flow:row wrap;
+}
+.hot > .hot_list > .hot_item{
+  width:50%;
+  font-size:16px;
+  color:#434953;
+  border-bottom:1px solid #E6E9ED;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding:30rpx 20rpx;
+}
+.hot > .hot_list > .hot_item:nth-child(odd){
+  border-right:1px solid #E6E9ED;
+}
+.hot > .hot_list > .hot_item > image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.hot > .hot_list > .hot_item > view{
+  width:100rpx;
+  text-align:right;
+  color:#ED6D15;
+  font-size:13px;
+}
+.hot > .hot_more{
+  padding:20rpx 0;
+  color:#4795F7;
+  font-size:14px;
+  text-align:center;
+}

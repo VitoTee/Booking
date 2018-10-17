@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/map/map",
+    "pages/detail/detail",
+    "pages/facilitfy/facilitfy",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#12347B",
+    "navigationBarTitleText": "Booking每日特惠",
+    "navigationBarTextStyle": "white"
+  }
+}
