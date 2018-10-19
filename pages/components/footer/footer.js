@@ -17,11 +17,6 @@ Component({
    */
   data: {
     about_data: []
-
-  },
-  
-  onLoad: function(){
-    this.methods.getAboutData()
   },
 
   /**
