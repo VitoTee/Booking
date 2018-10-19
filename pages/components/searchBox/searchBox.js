@@ -269,7 +269,8 @@ Component({
         checkOutValue: app.globalData.checkOutValue,
         checkInMonthDate: app.globalData.checkInMonthDate,
         checkOutMonthDate: app.globalData.checkOutMonthDate,
-        stayNights: app.globalData.stayNights
+        stayNights: app.globalData.stayNights,
+        destination: app.globalData.destination
       });
     },
 
@@ -311,7 +312,9 @@ Component({
         app.globalData.destination = destination;
         wx.navigateTo({
           url: `/pages/list/list?city=${this.data.destination}`,
-          success: function(msg){},
+          success: (msg)=>{
+            this.hideSearchBox();
+          },
           fail: function(){}
         })
       }else

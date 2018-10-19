@@ -89,6 +89,7 @@
         placeholder="输入目的地开始搜索" 
         bindconfirm="inputConfirm" 
         bindinput="inputConfirm" 
+        value="{{ destination }}"
       ></input>
     </view>
     <text bindtap="hideAll">取消</text>

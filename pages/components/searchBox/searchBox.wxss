@@ -101,7 +101,6 @@ searchBoxComponent{
   color:#fff;
   font-size:17px;
   margin:20rpx auto 40rpx;
-  box-shadow:6rpx 4rpx #1C79F0;
 
 }
 .banner .picker{
