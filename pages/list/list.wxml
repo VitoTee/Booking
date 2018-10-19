@@ -1,7 +1,7 @@
 <!--pages/list/list.wxml-->
 <view class="container">
   <searchBoxComponent id="searchBoxComponent" style="margin-top:-170rpx"></searchBoxComponent>
-  <view class="list_intro">
+  <view class="list_intro" wx:if="{{hotelList.length}}">
     <view class='clearfix'>
       <image src="/assets/images/icons/icon1.png"></image>
       <text>今日特惠</text>
@@ -28,6 +28,9 @@
         <text>约 {{ item.price }}元</text>
       </view>
     </view>
+  </view>
+  <view class="notice_box">
+    若找不到想要的搜索的目的地，不妨尝试输入国家或地区名称进行搜索，或用英文搜索试试
   </view>
   <footerComponent id="footerComponent">
     <!-- <view slot="before"></view>

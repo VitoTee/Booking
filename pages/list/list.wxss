@@ -124,3 +124,9 @@
   color:#fff;
   font-size:13px;
 }
+.notice_box{
+  font-size:14px;
+  color:#3E4753;
+  padding:40rpx 50rpx;
+  text-align:center;
+}
