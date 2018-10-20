@@ -1,7 +1,7 @@
 # Booking
 a weChat Mini Program about Booking
 
-个人测试小程序()：仿 Booking.com缤客
+个人测试小程序(非上线使用)：仿 Booking.com缤客
 
 项目介绍：
   - 首页
