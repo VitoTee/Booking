@@ -34,7 +34,7 @@
               <text class="deadline">{{item.deadline}}</text>
             </view>
             <view>{{item.name}}</view>  
-            <view>★★★★★</view>
+            <text class="star">★★★★★</text>
             <view>每晚 <text>{{item.price}}元起</text></view>
           </navigator>
         </view>

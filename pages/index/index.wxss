@@ -66,7 +66,7 @@
   font-size:15px;
   font-weight: bold;
 }
-.intro_item > navigator > view:nth-child(5){
+.intro_item > navigator > .star{
   color:#FEBA12;
 }
 .intro_item > navigator > view:last-child{
