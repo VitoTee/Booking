@@ -1,0 +1,5 @@
+<!--pages/Attention/Attention.wxml-->
+<view class="normalView">
+  <text class="title">预订须知</text>
+  <text>客人在大堂每次入住可免费使用1小时的WiFi。</text>
+</view>

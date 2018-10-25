@@ -1,0 +1,25 @@
+<!--pages/policy/policy.wxml-->
+<view class="normalView">
+  <text class="title">儿童和加床政策</text>
+  <text>允许客人携带儿童入住。这件客房不可加床。</text>
+</view>
+<view class="normalView">
+  <text class="title">团体预订</text>
+  <text>如果预订客房数超过9间，住宿方将采用不同的政策和额外补充规定。</text>
+</view>
+<view class="normalView">
+  <text class="title">网络</text>
+  <text>住宿方与客房提供WiFi(免费)。</text>
+</view>
+<view class="normalView">
+  <text class="title">停车场</text>
+  <text>无需预订：住宿场所设有私人停车设施，收费标准：每日CNY160。</text>
+</view>
+<view class="normalView">
+  <text class="title">宠物</text>
+  <text>不允许携带宠物入住。</text>
+</view>
+<view class="normalView">
+  <text class="title">信用卡预授权</text>
+  <text>酒店有权在入住之前行使信用卡预授权。</text>
+</view>

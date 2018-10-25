@@ -166,7 +166,14 @@
       </view>
     </view>
   </view>
-    <view class="separation"></view>
+  <view class="separation"></view>
+  <view class="arrowView">
+    <navigator url="../attention/attention" hover-class='none'>预订须知</navigator>
+  </view>
+  <view class="separation"></view>
+    <view class="arrowView">
+    <navigator url="../policy/policy" hover-class="none">预订政策</navigator>
+  </view>
   <!-- footer component -->
   <footerComponent id="footerComponent"></footerComponent>
 </view>
