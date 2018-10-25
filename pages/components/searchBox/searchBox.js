@@ -318,6 +318,10 @@ Component({
           fail: function(){}
         })
       }else
+        wx.showToast({
+          title : '请选择目的地',
+          icon : 'loading'
+        })
         return;
     }
   }
