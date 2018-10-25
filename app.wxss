@@ -45,8 +45,8 @@ view{
   content:'';
   display:block;
   width:20rpx; height:20rpx;
-  border-top:8rpx solid #E6E9ED;
-  border-right:8rpx solid #E6E9ED;
+  border-top:6rpx solid #E6E9ED;
+  border-right:6rpx solid #E6E9ED;
   position:absolute;
   top:50%; right:30rpx;
   transform-origin:center center;
