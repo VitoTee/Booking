@@ -52,3 +52,15 @@ view{
   transform-origin:center center;
   transform:translateY(-50%) rotate(45deg);
 }
+.normalView{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  padding:20rpx;
+  font-size:14px;
+  border-bottom:1px solid #E6E9ED;
+}
+.normalView > .title{
+  font-size:17px;
+  margin-bottom:10rpx;
+}
