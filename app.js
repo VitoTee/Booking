@@ -987,5 +987,25 @@ App({
   destinationChange: function(id,city){
     this.globalData.destination = city;
     return this.globalData.destination;
+  },
+  /**
+   * 引用searchBox组件
+  */
+  getSearchBoxComponent: function(that){
+    //引用searchBox组件
+    that.searchBoxComponent = that.selectComponent('#searchBoxComponent');
+    //调用方法 - 获取city数据
+    that.searchBoxComponent.getCityData();
+    //调用方法 - 同步globalData数据
+    that.searchBoxComponent.syncGlobalData();
+  },
+  /**
+   * 引用footer组件
+  */
+  getFooterComponent: function(that){
+    //引用footer组件
+    that.footerComponent = that.selectComponent('#footerComponent');
+    //调用方法 - 获取about数据
+    that.footerComponent.getAboutData();
   }
 })
