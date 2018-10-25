@@ -9,7 +9,7 @@
     </view>
   </view>
   <view class="hotel_list">
-    <view class="hotel_item" wx:for="{{ hotelList }}" wx:key="id">
+    <view class="hotel_item" wx:for="{{ hotelList }}" wx:key="id" bindtap="toDetail" data-id="{{ item.id }}">
       <image src="{{ item.pic }}" mode="scaleToFill"></image>
       <view>
         <view>{{ item.name }}</view>

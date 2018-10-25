@@ -21,6 +21,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options.id)
     //存储参数id
     this.setData({
       detail_id : options.id
@@ -84,7 +85,7 @@ Page({
    * 获取详情数据
   */
   getDetailInfo: function(id){
-    app.globalData.index_intro_data.forEach((item,i)=>{
+    app.globalData.hotel_data.forEach((item,i)=>{
       if(item.id == this.data.detail_id){
         this.setData({
           detail_info : item

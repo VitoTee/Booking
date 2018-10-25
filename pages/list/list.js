@@ -94,5 +94,19 @@ Page({
         })
       }
     })
+  },
+  /**
+   * 选择酒店，跳转去详情页
+  */
+  toDetail: function(e){
+    let id = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../detail/detail?id='+id,
+      success: function(msg){
+      },
+      fail: function(err){
+        console.log(err);
+      }
+    })
   }
 })
