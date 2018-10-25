@@ -5,7 +5,7 @@
     <swiper-item wx:for="{{detail_info.picList}}" wx:key="id">
       <image mode="aspectFill" src="{{item.pic}}"></image>
     </swiper-item>
-</swiper>
+  </swiper>
   <!-- hotel name -->
   <view class="detail_boxs">
     <view class='clearfix'>
@@ -166,4 +166,7 @@
       </view>
     </view>
   </view>
+    <view class="separation"></view>
+  <!-- footer component -->
+  <footerComponent id="footerComponent"></footerComponent>
 </view>

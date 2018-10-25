@@ -21,7 +21,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(options.id)
     //存储参数id
     this.setData({
       detail_id : options.id
@@ -36,7 +35,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    let that = this;
+    //引用footer组件
+    app.getFooterComponent(this);
   },
 
   /**

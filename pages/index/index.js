@@ -77,17 +77,12 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+    let that = this;
     //引用searchBox组件
-    this.searchBoxComponent = this.selectComponent('#searchBoxComponent');
-      //调用方法 - 获取city数据
-      this.searchBoxComponent.getCityData();
-      //调用方法 - 同步globalData数据
-      this.searchBoxComponent.syncGlobalData();
+    app.getSearchBoxComponent(that);
 
     //引用footer组件
-    this.footerComponent = this.selectComponent('#footerComponent');
-      //调用方法 - 获取about数据
-      this.footerComponent.getAboutData();
+    app.getFooterComponent(that);
   },
 
   /**
