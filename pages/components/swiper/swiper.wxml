@@ -1,0 +1,7 @@
+<!--pages/components/swiper/swiper.wxml-->
+  <!-- swiper -->
+  <swiper autoplay='1000' indicator-dots="true" indicator-active-color='#ccc'>
+    <swiper-item wx:for="{{picList}}" wx:key="id">
+      <image mode="aspectFill" src="{{item.pic}}"></image>
+    </swiper-item>
+  </swiper>

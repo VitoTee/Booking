@@ -1,0 +1,6 @@
+<!--pages/room/room.wxml-->
+<view class='container'>
+  <!-- swiper component -->
+  <swiperComponent id="swiperComponent"></swiperComponent>
+  
+</view>

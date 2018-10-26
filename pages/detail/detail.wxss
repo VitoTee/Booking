@@ -1,15 +1,4 @@
 /* pages/detail/detail.wxss */
-.container > swiper{
-  width:100%;
-  height:800rpx;
-}
-swiper-item{
-  width:100%;
-}
-swiper-item > image{
-  width:100%;
-  height: 100%;
-}
 .detail_boxs{
   width:100%;
 }
