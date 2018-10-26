@@ -71,23 +71,19 @@
             </picker>
         </view>
       </view>
-      <view>
+      <view wx:for="{{ room_data }}" wx:key="id">
         <view>
-          <image src="/assets/images/details/detail_4.jpg" mode='aspectFill'></image>
+          <image src="{{ item.pic }}" mode='aspectFill'></image>
           <view>
-            <view>高级大床及双床间</view>
-            <view>
+            <view>{{ item.name }}</view>
+            <view wx:for="{{ item.special }}" wx:key="index">
               <icon type="success" size="10"></icon>
-              <text>免费WiFi</text>
-            </view> 
-            <view>
-              <icon type="success" size="10"></icon>
-              <text>指定日期前可免费取消</text>
-            </view> 
+              <text>{{item}}</text>
+            </view>
             <view>
               <view>最多可住2人</view>
               <view>2张单人床</view>
-              <view><navigator hover-class='none'>更多</navigator></view>
+              <view><navigator hover-class='none' url="../room/room?id={{ item.id }}">更多</navigator></view>
             </view>
           </view>
           <view class="off">
@@ -96,70 +92,10 @@
           </view>
         </view>
         <view>
-          <view>780<text>元</text></view>
-          <view>1520元</view>
-          <button>点击预订</button>
-        </view>
-        <view class="separation"></view>
-      </view>
-      <view>
-        <view>
-          <image src="/assets/images/details/detail_4.jpg" mode='aspectFill'></image>
+          <view>{{item.price}}<text>元</text></view>
           <view>
-            <view>高级大床及双床间</view>
-            <view>
-              <icon type="success" size="10"></icon>
-              <text>免费WiFi</text>
-            </view> 
-            <view>
-              <icon type="success" size="10"></icon>
-              <text>指定日期前可免费取消</text>
-            </view> 
-            <view>
-              <view>最多可住2人</view>
-              <view>2张单人床</view>
-              <view><navigator hover-class='none'>更多</navigator></view>
-            </view>
+            <text wx:if="{{ item.oldPrice != null }}">{{ item.oldPrice }}元</text>
           </view>
-          <view class="off">
-            <image src="/assets/images/icons/icon3.png"></image>
-            <text>-48%</text> 
-          </view>
-        </view>
-        <view>
-          <view>780<text>元</text></view>
-          <view>1520元</view>
-          <button>点击预订</button>
-        </view>
-        <view class="separation"></view>
-      </view>
-      <view>
-        <view>
-          <image src="/assets/images/details/detail_4.jpg" mode='aspectFill'></image>
-          <view>
-            <view>高级大床及双床间</view>
-            <view>
-              <icon type="success" size="10"></icon>
-              <text>免费WiFi</text>
-            </view> 
-            <view>
-              <icon type="success" size="10"></icon>
-              <text>指定日期前可免费取消</text>
-            </view> 
-            <view>
-              <view>最多可住2人</view>
-              <view>2张单人床</view>
-              <view><navigator hover-class='none'>更多</navigator></view>
-            </view>
-          </view>
-          <view class="off">
-            <image src="/assets/images/icons/icon3.png"></image>
-            <text>-48%</text> 
-          </view>
-        </view>
-        <view>
-          <view>780<text>元</text></view>
-          <view>1520元</view>
           <button>点击预订</button>
         </view>
         <view class="separation"></view>

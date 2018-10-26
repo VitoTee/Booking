@@ -14,7 +14,8 @@ Page({
     checkOutMonthDate: app.globalData.checkOutMonthDate,
     countTime: null,
     detail_id: null,
-    detail_info: []
+    detail_info: [],
+    room_data: app.globalData.room_data
   },
 
   /**
@@ -179,7 +180,6 @@ Page({
    * 倒计时
   */
   countDown: function(countValue){
-    // console.log(countValue);
     let result = null;
     let deadline = new Date(countValue).getTime() + (60*60*16*1000);
     let now = new Date().getTime();
@@ -208,7 +208,6 @@ Page({
   */
   toMap: function(e){
     let {latitude,longitude} = e.currentTarget.dataset;
-    console.log(latitude, longitude)
     wx.navigateTo({
       url: `../map/map?latitude=${latitude}&longitude=${longitude}`,
       success: function(res){

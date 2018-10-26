@@ -174,7 +174,6 @@ Page({
       this.setData({
         intro_data: dataList
       });
-      console.log(key)
       setTimeout(() => {
         this.countDown(deadline, key+1);
       }, 1000)
