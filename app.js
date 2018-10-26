@@ -960,6 +960,7 @@ App({
     this.globalData.checkOutDate = result.filterValue;
     this.globalData.checkOutValue = result.value;
     this.globalData.checkOutMonthDate = result.month_date;  
+    console.log(this.globalData);
     return result;
   },
   /**
@@ -1007,5 +1008,19 @@ App({
     that.footerComponent = that.selectComponent('#footerComponent');
     //调用方法 - 获取about数据
     that.footerComponent.getAboutData();
-  }
+  },
+  /**
+   * 同步globalData数据
+  */
+  syncGlobalData: function (that,app) {
+    that.setData({
+      checkInDate: app.globalData.checkInDate,
+      checkOutDate: app.globalData.checkOutDate,
+      checkInValue: app.globalData.checkInValue,
+      checkOutValue: app.globalData.checkOutValue,
+      checkInMonthDate: app.globalData.checkInMonthDate,
+      checkOutMonthDate: app.globalData.checkOutMonthDate,
+      stayNights: app.globalData.stayNights
+    });
+  },
 })
