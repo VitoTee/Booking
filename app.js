@@ -886,6 +886,11 @@ App({
         name: '套房',
         price: '2485',
         oldPrice: null,
+        pic: '/assets/images/details/detail_4.jpg',
+        special: [
+          '免费WiFi',
+          '指定日期前可免费取消'
+        ],
         roomMsg: [
           {
             title: '房价已含',
@@ -997,6 +1002,11 @@ App({
         name: 'HD宫套房',
         price: '1444',
         oldPrice: null,
+        pic: '/assets/images/details/detail_2.jpg',
+        special: [
+          '免费WiFi',
+          '可俯瞰台北101大楼和台北市景'
+        ],
         roomMsg: [
           {
             title: '房价已含',
@@ -1029,7 +1039,7 @@ App({
           {
             title: '餐点',
             content: [
-              '放假包括早餐。'
+              '房价包括早餐。'
             ]
           },
           {
@@ -1107,6 +1117,11 @@ App({
         name: '花园景豪华特大号房间',
         price: '3393',
         oldPrice: 4620,
+        pic: '/assets/images/details/detail_3.jpg',
+        special: [
+          '允许客人携带儿童入住',
+          '无需预付'
+        ],
         roomMsg: [
           {
             title: '房价已含',
