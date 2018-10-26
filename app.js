@@ -995,6 +995,36 @@ App({
               '1张 超大号床(特大号床)：宽181-210厘米'
             ]
           }
+        ],
+        picList: [
+          {
+            id: 1,
+            pic: '/assets/images/details/detail_4.jpg'
+          },
+          {
+            id: 2,
+            pic: '/assets/images/details/detail_3.jpg'
+          },
+          {
+            id: 3,
+            pic: '/assets/images/details/detail_2.jpg'
+          },
+          {
+            id: 4,
+            pic: '/assets/images/details/detail_1.jpg'
+          },
+          {
+            id: 5,
+            pic: '/assets/images/details/detail_3.jpg'
+          },
+          {
+            id: 6,
+            pic: '/assets/images/details/detail_4.jpg'
+          },
+          {
+            id: 7,
+            pic: '/assets/images/details/detail_2.jpg'
+          },
         ]
       },
       {
@@ -1110,6 +1140,36 @@ App({
               '1张 超大号床(特大号床)：宽181-210厘米'
             ]
           }
+        ],
+        picList: [
+          {
+            id: 1,
+            pic: '/assets/images/details/detail_4.jpg'
+          },
+          {
+            id: 2,
+            pic: '/assets/images/details/detail_3.jpg'
+          },
+          {
+            id: 3,
+            pic: '/assets/images/details/detail_2.jpg'
+          },
+          {
+            id: 4,
+            pic: '/assets/images/details/detail_1.jpg'
+          },
+          {
+            id: 5,
+            pic: '/assets/images/details/detail_3.jpg'
+          },
+          {
+            id: 6,
+            pic: '/assets/images/details/detail_4.jpg'
+          },
+          {
+            id: 7,
+            pic: '/assets/images/details/detail_2.jpg'
+          },
         ]
       },
       {
@@ -1228,6 +1288,36 @@ App({
               '1张 超大号床双人床：宽181-210厘米'
             ]
           }
+        ],
+        picList: [
+          {
+            id: 1,
+            pic: '/assets/images/details/detail_4.jpg'
+          },
+          {
+            id: 2,
+            pic: '/assets/images/details/detail_3.jpg'
+          },
+          {
+            id: 3,
+            pic: '/assets/images/details/detail_2.jpg'
+          },
+          {
+            id: 4,
+            pic: '/assets/images/details/detail_1.jpg'
+          },
+          {
+            id: 5,
+            pic: '/assets/images/details/detail_3.jpg'
+          },
+          {
+            id: 6,
+            pic: '/assets/images/details/detail_4.jpg'
+          },
+          {
+            id: 7,
+            pic: '/assets/images/details/detail_2.jpg'
+          },
         ]
       }
     ]
