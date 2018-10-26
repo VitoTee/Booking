@@ -51,3 +51,12 @@ a weChat Mini Program about Booking
       - 选择客房、成人、儿童数量
       - 输入城市名或国家显示对应城市列表
       - 提交确认表单搜索跳转列表页，显示相关酒店信息列表
+
+所用小程序接口:
+  - wx.navigateTo() 路由跳转
+  - wx.showToast()  提示框
+  - wx.setNavigationBarTitle()  设置当前页面标题
+
+自定义组件:
+  - 目的地搜索框 searchBoxComponent
+  - footer(关于缤客、版权) footerConponent
