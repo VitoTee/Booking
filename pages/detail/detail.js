@@ -44,7 +44,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.syncGlobalData();
+    let that = this;
+    //同步公共数据
+    app.syncGlobalData(that,app);
   },
 
   /**
@@ -92,7 +94,7 @@ Page({
           detail_info : item
         })
 
-        //设置头部navigation
+        //设置当前页面标题
         wx.setNavigationBarTitle({
           title: item.name
         })
@@ -172,20 +174,6 @@ Page({
     this.setData({
       stayNights: stayNights
     })
-  },
-  /**
- * 同步globalData数据
-*/
-  syncGlobalData: function () {
-    this.setData({
-      checkInDate: app.globalData.checkInDate,
-      checkOutDate: app.globalData.checkOutDate,
-      checkInValue: app.globalData.checkInValue,
-      checkOutValue: app.globalData.checkOutValue,
-      checkInMonthDate: app.globalData.checkInMonthDate,
-      checkOutMonthDate: app.globalData.checkOutMonthDate,
-      stayNights: app.globalData.stayNights
-    });
   },
   /**
    * 倒计时

@@ -89,6 +89,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    let that = this;
+    //引用searchBox组件
+    that.searchBoxComponent = that.selectComponent('#searchBoxComponent');
+    //同步global数据
+    that.searchBoxComponent.syncGlobalData();
+    
   },
 
   /**

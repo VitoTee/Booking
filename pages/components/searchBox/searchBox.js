@@ -262,16 +262,8 @@ Component({
      * 同步globalData数据
     */
     syncGlobalData: function () {
-      this.setData({
-        checkInDate: app.globalData.checkInDate,
-        checkOutDate: app.globalData.checkOutDate,
-        checkInValue: app.globalData.checkInValue,
-        checkOutValue: app.globalData.checkOutValue,
-        checkInMonthDate: app.globalData.checkInMonthDate,
-        checkOutMonthDate: app.globalData.checkOutMonthDate,
-        stayNights: app.globalData.stayNights,
-        destination: app.globalData.destination
-      });
+      let that = this;
+      app.syncGlobalData(that,app)
     },
 
     /**
