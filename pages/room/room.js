@@ -74,7 +74,7 @@ Page({
     app.globalData.room_data.forEach((item,i)=>{
       if(item.id == id){
         this.setData({
-          roomDetail : item
+          room_info : item
         })
         console.log(item);
         //引用swiper组件

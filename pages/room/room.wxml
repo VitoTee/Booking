@@ -2,5 +2,19 @@
 <view class='container'>
   <!-- swiper component -->
   <swiperComponent id="swiperComponent"></swiperComponent>
-  
+  <view>
+    <view>{{ room_info.name }}</view>
+    <view>
+      <text class="price">{{ room_info.price }}</text><text>元</text><text class="oldPrice" wx:if="{{ room_info.oldPrice }}">{{ room_info.oldPrice }}元</text>
+    </view>
+  </view>
+  <view class="separation"></view>
+  <view class="infoList">
+    <view class="infoItem" wx:for="{{ room_info.roomMsg }}" wx:key="index">
+      <view>{{ item.title }}</view>
+      <view>
+        <text wx:for="{{ item.content }}" wx:key="index">{{ item }}</text>
+      </view>
+    </view>
+  </view>
 </view>
