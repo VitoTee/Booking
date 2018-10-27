@@ -103,6 +103,10 @@ Page({
         //调用倒数计时器
         this.countDown(item.deadline);
 
+        //调用swiper组件
+        this.swiperComponent = this.selectComponent('#swiperComponent');
+        this.swiperComponent.getPicList(item.picList);
+
       }
     })
   },

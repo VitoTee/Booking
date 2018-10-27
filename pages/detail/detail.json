@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "swiperComponent" : "../components/swiper/swiper",
     "footerComponent" : "../components/footer/footer"
   }
 }

@@ -1,11 +1,7 @@
 <!--pages/detail/detail.wxml-->
 <view class='container'>
   <!-- swiper -->
-  <swiper autoplay='1000' indicator-dots="true" indicator-active-color='#ccc'>
-    <swiper-item wx:for="{{detail_info.picList}}" wx:key="id">
-      <image mode="aspectFill" src="{{item.pic}}"></image>
-    </swiper-item>
-  </swiper>
+  <swiperComponent id="swiperComponent"></swiperComponent>
   <!-- hotel name -->
   <view class="detail_boxs">
     <view class='clearfix'>
