@@ -88,7 +88,7 @@
   
 }
 .hotel_list > .hotel_item:first-child > view:last-child > text:first-child{
-  display: none;
+  visibility: hidden;
 }
 .hotel_list > .hotel_item > view:last-child > text:first-child{
   color:#ccc;
