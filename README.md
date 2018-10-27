@@ -61,3 +61,4 @@ a WeChat Mini Program about Booking
 自定义组件:
   - 目的地搜索框 searchBoxComponent
   - footer(关于缤客、版权) footerConponent
+  - 图片轮播 swiperComponent
