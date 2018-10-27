@@ -1,5 +1,5 @@
 # Booking
-a weChat Mini Program about Booking
+a WeChat Mini Program about Booking
 
 个人测试小程序(非上线使用)：Booking.com缤客
 
