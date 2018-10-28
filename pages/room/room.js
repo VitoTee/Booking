@@ -15,7 +15,6 @@ Page({
    */
   onLoad: function (options) {
     let id = options.id;
-    console.log(id);
     this.getRoomDetail(id);
   },
 
@@ -76,7 +75,6 @@ Page({
         this.setData({
           room_info : item
         })
-        console.log(item);
         //引用swiper组件
         this.swiperComponent = this.selectComponent('#swiperComponent');
         //调用方法 - 给组件传picList
