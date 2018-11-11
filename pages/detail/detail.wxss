@@ -194,7 +194,7 @@
 }
 .detail_boxs > view:nth-child(10) > view:not(:first-child) > view:nth-child(2) > view:first-child{
   color:#ED6D15;
-  width:20%;
+  width:25%;
   text-align: center;
 }
 .detail_boxs > view:nth-child(10) > view:not(:first-child) > view:nth-child(2) > view:first-child > text{

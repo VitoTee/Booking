@@ -88,7 +88,7 @@
           </view>
         </view>
         <view>
-          <view>{{item.price}}<text>元</text></view>
+          <view>约{{item.price}}<text>元</text></view>
           <view>
             <text wx:if="{{ item.oldPrice != null }}">{{ item.oldPrice }}元</text>
           </view>
