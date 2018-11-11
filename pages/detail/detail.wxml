@@ -47,7 +47,7 @@
       </view>
       <text>共{{ detail_info.comment }}条点评</text>
     </view>
-    <view class="separation"></view>
+    <view class="separation"></view> 
     <view>
       <view>
         <view style="border-right:1rpx solid #ccc">
@@ -92,7 +92,7 @@
           <view>
             <text wx:if="{{ item.oldPrice != null }}">{{ item.oldPrice }}元</text>
           </view>
-          <button>点击预订</button>
+          <button bindtap="toOrder" data-roomId="{{ item.id }}" data-hotelId="{{ detail_info.id }}">点击预订</button>
         </view>
         <view class="separation"></view>
       </view>
@@ -103,7 +103,7 @@
     <navigator url="../attention/attention" hover-class='none'>预订须知</navigator>
   </view>
   <view class="separation"></view>
-    <view class="arrowView">
+  <view class="arrowView">
     <navigator url="../policy/policy" hover-class="none">预订政策</navigator>
   </view>
   <!-- footer component -->

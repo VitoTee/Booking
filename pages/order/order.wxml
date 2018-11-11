@@ -1,0 +1,35 @@
+<!--pages/order/order.wxml-->
+<view class="container">
+  <view class="roomMsg" style="background-image:url({{ roomMsg.pic }})">
+    <view class="msgBox">
+      <text>{{ hotelMsg.name }}</text>
+      <text>★★★★★</text>
+      <text>地址：{{ hotelMsg.address_cn }}</text>
+      <view>
+        <text>{{hotelMsg.score}}</text>
+        <text>{{hotelMsg.score >= 7 ? '非常好' : '良好'}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="boxLine">
+    <text>已选客房</text>
+  </view>
+  <view class="orderRoomTime">
+    <view style="border-right:1rpx solid #ccc">
+        <text>入住日期</text>
+        <picker mode="date" value="{{ checkInValue }}" bindchange="checkInChange">
+          <view class="picker">
+            {{ checkInDate }}
+          </view>
+        </picker>
+    </view>
+    <view>
+        <text>退房日期</text>
+        <picker mode="date" value="{{ checkOutValue }}" bindchange="checkOutChange">
+          <view class="picker">
+            {{ checkOutDate }}
+          </view>
+        </picker>
+    </view>
+  </view>
+</view>

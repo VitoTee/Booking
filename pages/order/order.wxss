@@ -1,0 +1,67 @@
+/* pages/order/order.wxss */
+.roomMsg{
+  width: 100%;
+  height: 450rpx;
+  background-size: cover;
+  background-position:center center;
+  position: relative;
+}
+.roomMsg > .msgBox{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  width: 90%;
+  background-color: #fff;
+  padding: 30rpx;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.roomMsg > .msgBox > text:first-child{
+  font-size:14px;
+}
+.roomMsg > .msgBox > view:last-child{
+  position:absolute;
+  right:20rpx;
+  top:30rpx;
+  color:#2C5CA5;
+  text-align:right;
+  font-size:12px;
+}
+.roomMsg > .msgBox > view:last-child > text:first-child{
+  color:#fff;
+  background-color:#2C5CA5;
+  width:50rpx;
+  height:50rpx;
+  line-height:50rpx;
+  border-radius:10rpx;
+  border-bottom-left-radius:0;
+  text-align:center;
+  display:inline-block;
+  margin-right:10rpx;
+}
+.boxLine{
+  width: 100%;
+  background-color: #F3F4F6;
+  font-size:13px;
+  padding:30rpx;
+}
+.orderRoomTime{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  padding:30rpx 20rpx;
+  border-bottom:1px solid #F2F4F6;
+}
+.orderRoomTime > view{
+  width:45%;
+  text-align:center;
+  font-size:14px;
+  color:#808FA4;
+}
+.orderRoomTime > view > picker{
+  color:#4393f6;
+  font-size:15px;
+  margin-top:10rpx;
+}
