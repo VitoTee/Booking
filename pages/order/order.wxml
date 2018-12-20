@@ -32,4 +32,34 @@
         </picker>
     </view>
   </view>
+  <view class="orderRoomInfo">
+    <view class="infoMsg">
+      <view class="msgTitle">城景客房</view>
+      <view class="msgSpec">
+        <view>
+          <text>住客人数：</text>
+          最多2人
+        </view>
+        <view>
+          <text>床型：</text>
+          单人床/双人床
+        </view>
+      </view>
+      <view>
+        <icon type="success" size="10"></icon>
+        <text>免费WiFi</text>
+        <icon type="info" size="10"></icon>
+        <text>不退款</text>
+      </view>
+    </view>
+    <view class="infoPrice">
+      <image src="/assets/images/icons/icon3.png"></image>
+      <text class="infoOff">-66%</text>
+      <text class="infoOriginalPrice">2322元</text>
+      <text class="infoCurrentPrice">约780元</text>
+    </view>
+  </view>
+    <view class="boxLine">
+    <text>联系人信息</text>
+  </view>
 </view>

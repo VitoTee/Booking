@@ -65,3 +65,70 @@
   font-size:15px;
   margin-top:10rpx;
 }
+.orderRoomInfo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom:1px solid #F2F4F6;
+}
+.orderRoomInfo > .infoMsg{
+  width: 75%;
+  font-size: 11px;
+  padding: 30rpx;
+}
+.orderRoomInfo > .infoMsg > view{
+  margin-bottom: 15rpx;
+}
+.orderRoomInfo > .infoMsg > .msgTitle{
+  font-size: 14px;
+}
+.orderRoomInfo > .infoMsg > .msgSpec{
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.orderRoomInfo > .infoMsg > .msgSpec >view > text{
+  color: #808FA4;
+}
+.orderRoomInfo > .infoMsg > view:last-of-type{
+  display: flex;
+  align-items: center;
+}
+.orderRoomInfo > .infoMsg > view:last-of-type > icon{
+  margin-right: 6rpx;
+}
+.orderRoomInfo > .infoMsg > view:last-of-type > icon:last-of-type{
+  margin-left: 30rpx;
+}
+.orderRoomInfo > .infoPrice{
+  width: 22%;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+}
+.orderRoomInfo > .infoPrice > image{
+  width: 96rpx;
+  height: 80rpx;
+  margin-bottom: 20rpx;
+  transform: translateX(20rpx);
+}
+.orderRoomInfo > .infoPrice > .infoOff{
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  z-index: 2;
+  font-size: 13px;
+  color: #fff;
+  transform: translateX(40rpx);
+}
+.orderRoomInfo > .infoPrice > .infoOriginalPrice{
+  text-decoration: line-through;
+  color: #808FA4;
+  font-size: 10px;
+  text-align: center;
+  line-height: 15px;
+}
+.orderRoomInfo > .infoPrice > .infoCurrentPrice{
+  font-size: 16px;
+  color: #ED6D15;
+}
