@@ -62,7 +62,8 @@ Page({
   data: {
     intro_data: [],
     hot_data: [],
-    hot_getOneData: []
+    hot_getOneData: [],
+    moreBtnIsShow: true
   },
 
   /**
@@ -152,7 +153,12 @@ Page({
     this.setData({
       hot_data: app.globalData.index_hot_data.slice(offset,size),
       hot_getOneData: app.globalData.index_hot_data[9]
-    })
+    });
+    if (size >= app.globalData.index_hot_data.length) {
+      this.setData({
+        moreBtnIsShow: false
+      })
+    }
   },
 
   /**

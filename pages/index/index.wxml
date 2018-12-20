@@ -64,7 +64,7 @@
           </view>
         </view>
       </view>
-      <view class="hot_more" bindtap="getHotData" data-length="{{hot_data.length}}">显示更多</view>
+      <view class="hot_more" bindtap="getHotData" data-length="{{hot_data.length}}" wx:if="{{moreBtnIsShow}}">显示更多</view>
     </view>
   </view>
   <view class="separation"></view>
