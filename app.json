@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/order/order",
     "pages/index/index",
+    "pages/order/order",
     "pages/room/room",
     "pages/attention/attention",
     "pages/detail/detail",
